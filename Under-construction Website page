@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Site under construction</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		}
+
+		body {
+			position: relative;
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		body:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url('red-painted-wall-2092064.jpg');
+			z-index: -1;
+			opacity: 0.8;
+		}
+
+		.group {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			width: 100%;
+		}
+
+		.group img {
+			width: 150px;
+			height: auto;
+		}
+
+		.group p {
+			font-size: 5vmin;
+			margin: 10px;
+		}
+
+		.group input {
+			margin: 10px auto;
+			width: 250px;
+			text-align: center;
+			padding: 10px;
+			border: 1px solid #ccc;
+			box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2) inset;
+			border-radius: 2px;
+		}
+
+		.group input[type=submit] {
+			width: 100px;
+			border-radius: 2px;
+			border: none;
+			background: rgb(113, 255, 113);
+			color: #363636;
+			cursor: pointer;
+			text-transform: uppercase;
+		}
+
+		.Navi {
+			padding: 1rem !important;
+		}
+
+		.Navi a {
+			text-decoration: none;
+			text-decoration: none;
+			font-size: 100%;
+			margin: 0 3vmin;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			color: #fff;
+		}
+		.counter{
+			position: fixed;
+			bottom: 100px;
+			left: 50px;
+			right: 50px;
+			align-self: center; 
+		}
+	</style>
+	<link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body style="background-size:cover;text-align:center;font-family: 'Cardo', serif;">
+
+	<div class="Navi" style="background-color:black;padding:10px 10px 10px 10px;">
+		<a href="#" style="padding-left:5px;padding-right:5px;float:left;">Home</a>
+		<a href="#" style=";padding-right:5px;float:left;">Services</a>
+		
+		&nbsp;
+
+	</div>
+	<br>
+
+	<div class="group">
+		<img id="logo" src="logo.png">
+		<p align="center">Website Under construction</p>
+		<p1 align="center">Leave your mail id here, we will update you once we are ready</p1>
+
+		<div class="connect" id="submit">
+			<input type="text" placeholder="Email" id="mail" onsubmit="verify()" contentEditable="True">
+			<input type="submit" value="Connect" onclick="run()">
+		</div>
+		<p2><b>For any query you can WhatsApp on 7838883008</b></p2>
+	</div>
+	<div class="counter">
+		<h4>Visitor Number</h4>
+	 <a href="" target="_blank"><img src="https://www.webfreecounter.com/hit.php?id=gakkpx&nd=6&style=3" border="0" alt="visitor counter"></a>
+	 </div>
+
+	<script type="text/javascript">
+		function verify() {
+			var a = document.getElementById("mail").innerHTML;
+			if (a.indexOf("enter email") != -1) {
+				document.getElementById("mail").innerHTML = "";
+			}
+		}
+		function run() {
+			var a = document.getElementById("mail").value;
+			if (a.indexOf("@") == -1 || a.indexOf(".") == -1 || a.indexOf(" ") != -1) {
+				alert("Invalid email id");
+			}
+			else {
+				alert("Thank you");
+			}
+		}
+	</script>
+</body>
+
+</html>
